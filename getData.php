@@ -1,8 +1,8 @@
 <?php
     $host = "localhost";
-	$uname = "id14052341_ebola";
-	$pass = "@Ebolachan123";
-	$db = "id14052341_eboladata";	
+	$uname = "vnjgatqtck";
+	$pass = "JDKXcj9PXG";
+	$db = "vnjgatqtck";	
  
     $con = mysqli_connect($host, $uname, $pass, $db);
     $data = mysqli_query($con,"SELECT Country,SUM(kasus) as jumlah FROM tb_ebola where Date like '%2014%' group by Country order by jumlah desc");
